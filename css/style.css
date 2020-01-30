@@ -8234,14 +8234,14 @@ h6 .wpb_text_column p {
 
 /* Page Shortcodes */
 .top_panel_image.top_panel_image_1{
-	background-image: url(../images/header.jpg);
-	background-size: cover;
-	background-position: center;
+    background-image: url(../images/header.jpg);
+    background-size: cover;
+    background-position: center;
 }
 .call_to_action_bg{
-	background-image:url(../images/570x338.jpg);
-	background-repeat:no-repeat;
-	background-size:cover;
+    background-image:url(../images/570x338.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
 }
 
 /* Page Typography */

@@ -86,88 +86,11 @@
                             <div class="menu_main_wrap">
                                 <nav class="menu_main_nav_area menu_hover_fade">
                                     <ul class="menu_main_nav" id="menu_main">
-                                        <li class="menu-item current-menu-item">
-                                            <a href="#"><span>Home</span></a>
-                                        </li>
-                                        <li class="menu-item menu-item-has-children">
-                                            <a href="#"><span>Features</span></a>
-                                            <ul class="sub-menu">
-                                                <li class="menu-item">
-                                                    <a href="shortcodes.html"><span>Shortcodes</span></a>
-                                                </li>
-                                                <li class="menu-item">
-                                                    <a href="typography.html"><span>Typography</span></a>
-                                                </li>
-                                                <li class="menu-item-has-children menu-item">
-                                                    <a href="#"><span>Tools</span></a>
-                                                    <ul class="sub-menu">
-                                                        <li class="menu-item">
-                                                            <a href="support.html"><span>Support</span></a>
-                                                        </li>
-                                                        <li class="menu-item">
-                                                            <a href="customization.html"><span>Customization</span></a>
-                                                        </li>
-                                                        <li class="menu-item">
-                                                            <a href="video-tutorials.html"><span>Video Tutorials</span></a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li class="menu-item">
-                                                    <a href="shop.html"><span>Shop</span></a>
-                                                </li>
-                                                <li class="menu-item">
-                                                    <a href="appointment.html"><span>Appointment</span></a>
-                                                </li>
-                                                <li class="menu-item">
-                                                    <a href="contacts.html"><span>Contacts</span></a>
-                                                </li>
-                                                <li class="menu-item">
-                                                    <a href="404.html"><span>Page 404</span></a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="menu-item">
-                                            <a href="about-us.html"><span>About Us</span></a>
-                                        </li>
-                                        <li class="menu-item menu-item-has-children">
-                                            <a href="#"><span>Services</span></a>
-                                            <ul class="sub-menu">
-                                                <li class="menu-item">
-                                                    <a href="our-services.html"><span>Our Services</span></a>
-                                                </li>
-                                                <li class="menu-item">
-                                                    <!--<a href="single-service.html"><span>Single Service</span></a>-->
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="menu-item menu-item-has-children">
-                                            <a href="#"><span>Blog</span></a>
-                                            <ul class="sub-menu">
-                                                <li class="menu-item">
-                                                    <a href="all-posts.html"><span>All Posts</span></a>
-                                                </li>
-                                                <li class="menu-item">
-                                                    <a href="blog-creative.html"><span>Blog Creative</span></a>
-                                                </li>
-                                                <li class="menu-item">
-                                                    <a href="blog-masonry.html"><span>Blog Masonry</span></a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="menu-item menu-item-has-children">
-                                            <a href="#"><span>Projects</span></a>
-                                            <ul class="sub-menu">
-                                                <li class="menu-item">
-                                                    <a href="projects-grid.html"><span>Projects Grid</span></a>
-                                                </li>
-                                                <li class="menu-item">
-                                                    <a href="projects-masonry.html"><span>Projects Masonry</span></a>
-                                                </li>
-                                                <li class="menu-item">
-                                                    <a href="projects-cobbles.html"><span>Projects Cobbles</span></a>
-                                                </li>
-                                            </ul>
-                                        </li>
+                                        {% for elem in site.data.menu %}
+                                            <li class="menu-item">
+                                                <a><span>{{ elem.title }}</span></a>
+                                            </li>
+                                        {% endfor %}
                                     </ul>
                                 </nav>
                                 <div class="search_wrap search_style_fullscreen search_state_closed top_panel_el top_panel_icon">
@@ -204,9 +127,6 @@
 
                         <! –– Page title ––>
                     <h1 class="top_panel_image_title">Dobson Avenue</h1>
-                    <div class="breadcrumbs">
-                        <a class="breadcrumbs_item home" href="index.html">Home</a> <span class="breadcrumbs_delimiter"></span> <span class="breadcrumbs_item current">About Us</span>
-                    </div>
                 </div>
             </section>
             <nav class="menu_pushy_nav_area pushy pushy-left scheme_dark">
@@ -324,88 +244,11 @@
                     <div class="panel_top">
                         <nav class="menu_main_nav_area">
                             <ul class="menu_main_nav" id="menu_mobile">
-                                <li class="menu-item current-menu-item">
-                                    <a href="#"><span>Home</span></a>
-                                </li>
-                                <li class="menu-item menu-item-has-children">
-                                    <a href="#"><span>Features</span></a>
-                                    <ul class="sub-menu">
-                                        <li class="menu-item">
-                                            <a href="shortcodes.html"><span>Shortcodes</span></a>
-                                        </li>
-                                        <li class="menu-item">
-                                            <a href="typography.html"><span>Typography</span></a>
-                                        </li>
-                                        <li class="menu-item-has-children menu-item">
-                                            <a href="#"><span>Tools</span></a>
-                                            <ul class="sub-menu">
-                                                <li class="menu-item">
-                                                    <a href="support.html"><span>Support</span></a>
-                                                </li>
-                                                <li class="menu-item">
-                                                    <a href="customization.html"><span>Customization</span></a>
-                                                </li>
-                                                <li class="menu-item">
-                                                    <a href="video-tutorials.html"><span>Video Tutorials</span></a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="menu-item">
-                                            <a href="shop.html"><span>Shop</span></a>
-                                        </li>
-                                        <li class="menu-item">
-                                            <a href="appointment.html"><span>Appointment</span></a>
-                                        </li>
-                                        <li class="menu-item">
-                                            <a href="contacts.html"><span>Contacts</span></a>
-                                        </li>
-                                        <li class="menu-item">
-                                            <a href="404.html"><span>Page 404</span></a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="about-us.html"><span>About Us</span></a>
-                                </li>
-                                <li class="menu-item menu-item-has-children">
-                                    <a href="#"><span>Services</span></a>
-                                    <ul class="sub-menu">
-                                        <li class="menu-item">
-                                            <a href="our-services.html"><span>Our Services</span></a>
-                                        </li>
-                                        <li class="menu-item">
-                                            <!--<a href="single-service.html"><span>Single Service</span></a>-->
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item menu-item-has-children">
-                                    <a href="#"><span>Blog</span></a>
-                                    <ul class="sub-menu">
-                                        <li class="menu-item">
-                                            <a href="all-posts.html"><span>All Posts</span></a>
-                                        </li>
-                                        <li class="menu-item">
-                                            <a href="blog-creative.html"><span>Blog Creative</span></a>
-                                        </li>
-                                        <li class="menu-item">
-                                            <a href="blog-masonry.html"><span>Blog Masonry</span></a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item menu-item-has-children">
-                                    <a href="#"><span>Projects</span></a>
-                                    <ul class="sub-menu">
-                                        <li class="menu-item">
-                                            <a href="projects-grid.html"><span>Projects Grid</span></a>
-                                        </li>
-                                        <li class="menu-item">
-                                            <a href="projects-masonry.html"><span>Projects Masonry</span></a>
-                                        </li>
-                                        <li class="menu-item">
-                                            <a href="projects-cobbles.html"><span>Projects Cobbles</span></a>
-                                        </li>
-                                    </ul>
-                                </li>
+                                {% for elem in site.data.menu %}
+                                    <li class="menu-item">
+                                        <a><span>{{ elem.title }}</span></a>
+                                    </li>
+                                {% endfor %}
                             </ul>
                         </nav>
                         <div class="search_wrap search_state_fixed search_ajax">

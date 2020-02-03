@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html class="scheme_original" lang="en-US">
 <head>
@@ -86,11 +87,15 @@
                             <div class="menu_main_wrap">
                                 <nav class="menu_main_nav_area menu_hover_fade">
                                     <ul class="menu_main_nav" id="menu_main">
-                                        {% for elem in site.data.menu %}
-                                            <li class="menu-item">
-                                                <a><span>{{ elem.title }}</span></a>
-                                            </li>
-                                        {% endfor %}
+                                        <li class="menu-item">
+                                            <a href="#"><span> Home </span></a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="/our-philosophy.html"><span> Our Philosophy </span></a>
+                                        </li>
+                                        <li class="menu-item">
+                                                <a href="/grow-chicago.html"><span> Grow Chicago </span></a>
+                                        </li>
                                     </ul>
                                 </nav>
                                 <div class="search_wrap search_style_fullscreen search_state_closed top_panel_el top_panel_icon">
@@ -244,11 +249,15 @@
                     <div class="panel_top">
                         <nav class="menu_main_nav_area">
                             <ul class="menu_main_nav" id="menu_mobile">
-                                {% for elem in site.data.menu %}
-                                    <li class="menu-item">
-                                        <a><span>{{ elem.title }}</span></a>
-                                    </li>
-                                {% endfor %}
+                                <li class="menu-item">
+                                    <a href="#"><span> Home </span></a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="/our-philosophy.html"><span> Our Philosophy </span></a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="/grow-chicago.html"><span> Grow Chicago </span></a>
+                                </li>
                             </ul>
                         </nav>
                         <div class="search_wrap search_state_fixed search_ajax">
